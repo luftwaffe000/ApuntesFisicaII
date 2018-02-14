@@ -2,11 +2,11 @@
 %Cambios de nombres 
 \renewcommand{\contentsname}{Contenido}
 \renewcommand{\partname}{Parte}
-\renewcommand{\appendixname}{Apéndice}
+\renewcommand{\appendixname}{Ap\'\e ndice}
 \renewcommand{\figurename}{Figura}
 \renewcommand{\tablename}{Tabla}
-\renewcommand{\bibname}{Bibliografía}
-\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\bibname}{Bibliograf\'\i a}
+\renewcommand{\chaptername}{Cap\'\i tulo}
 %
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
@@ -16,7 +16,7 @@
 %tikzs para hacer ilustraciones
 \usepackage{tikz}
 %título
-\author{Cano Jones, Alejandro}
+\author{Cano Jones, Alejandro; Laín Sanclemente, Andrés}
 \title{Fundamentos de la Física II}
 \date{Curso 2017-2018}
 
@@ -28,16 +28,23 @@
 	\section{Interacción Gravitatoria y Eléctrica}
 	Definimos interacción como una acción recíproca entre dos o más cuerpos. En esta sección, trataremos las interacciones (fuerzas) gravitatorias y eléctricas, las cuales actúan sobre cuerpos con masa o con carga eléctrica (respectivamente).
 	
+	\subsection{Ley de la gravitación universal}	
 	Comenzando con la interacción gravitatoria, ésta se ve definida mediante la llamada ley de Newton (1687 Sir Isaac Newton):
-	\begin{equation}
-	\overrightarrow{F_{12}}=-G\frac{m_1m_2}{|\vec{r_{12}}|^3}\overrightarrow{r_{12}} \left [N \right ]
+	\begin{equation}\label{GU1}
+	\vec{F}_{12}=-G\frac{m_1m_2}{|\vec{r}_{12}|^3}\vec{r}_{12} \left [N \right ]
 	\end{equation}
+	Equivalentemente, se puede escribir la ley de la Gravitación de Newton de la siguiente forma:
+	\begin{equation}\label{GU2}
+	\vec{F}_{12}=-G\dfrac{m_1m_2}{|\vec{r}_{12}|^2}\hat{u}_{12}\left [N \right ]
+	\end{equation}
+	Con $\hat{u}_{12}$ denotamos el vector unitario que parte de la masa $1$ y apunta a la masa $2$. La explicación de por qué ambas expresiones son equivalentes la damos en el apéndice A.
 	\begin{center}
 		\begin{tikzpicture}
 		\draw [ultra thin] (0,0) -- (5,2);
 		\draw [very thick] [red] [->] (0,0) -- (1.25,0.5);
 		\draw [very thick] [red] [->] (5,2) -- (3.75,1.5);
-		\draw [thick] [|->] (4.7,2.5)--(-0.3,0.5);
+		\draw [thick] [<-|] (4.7,2.5) -- (-0.3,0.5);
+		\draw [thin] [|->] (-0.45,1) -- (0.48,1.37);
 		\fill[ball color=blue] (0,0) circle (0.3);
 		\fill[ball color=blue] (5,2) circle (0.3);
 		\node[below] at (-0.2,-0.4) {$m_1$};
@@ -45,53 +52,102 @@
 		\node[above] at (2,1.5) {$\vec{r_{12}}$};
 		\node[below] at (4.5,1.5) {$\vec{F_{12}}$};
 		\node[below] at (0.9,0.2) {$\vec{F_{21}}$};
+		\node[above] at (-0.1,1.2) {$\hat{u}_{12}$};
 	\end{tikzpicture}
 	\end{center}
 	
-	%Este párrafo dice dos veces lo mismo; tenemos que cambiarlo.
-	Esta será una fuerza atractiva que aparece como interacción entre dos cuerpos con masas $m_1$ y $m_2$. Esta fuerza siempre actuará de forma atractiva y en la dirección del vector que une dichos cuerpos.
+	Esta será una fuerza atractiva que aparece como interacción entre dos cuerpos con masas $m_1$ y $m_2$. Además, esta fuerza siempre actuará en la dirección del vector que une dichos cuerpos.
 	
-	$G$ es una constante denominada constante de gravitación universal (medida por primera vez en 1798 por Henry Cavendish). Las unidades que posee en el sistema internacional de unidades (SI) se escogen para que la fuerza gravitatoria sea dimensionalmente correcta, esto es, que posea unidades newton [N].
+	$G$ es una constante denominada constante de gravitación universal (medida por primera vez en 1798 por Henry Cavendish). Las unidades que posee en el sistema internacional de unidades (SI) se escogen para que la fuerza gravitatoria sea dimensionalmente correcta, esto es, para que posea unidades newton [N].
 	\begin{equation}
 	G\simeq 6.674\cdot 10^{-11} \left [\frac{N\cdot m^2}{Kg^2} \right ]
 	\end{equation}
 	
+	\subsection{Ley de Coulomb}
 	La interacción eléctrica se define mediante la ley de Coulomb (1785 Charles-Augustin de Coulomb):
-	\begin{equation}
-	\overrightarrow{F_{12}}=-K\frac{q_1q_2}{|r_{12}|^3}\overrightarrow{r_{12}} \left [N \right ]
+	\begin{equation}\label{LC1}
+	\vec{F}_{12}=-K\frac{q_1q_2}{|\vec{r}_{12}|^3}\vec{r}_{12} \left [N \right ]
 	\end{equation}
 	
-	A diferencia de la interacción gravitatoria, la interacción eléctrica puede ser tanto atractiva (las cargas que interaccionan son de distinto signo) como repulsiva (las cargas tienen el mismo signo). Del mismo modo que la interacción gravitatoria, la eléctrica actuará en la dirección del vector que une los cuerpos con carga.
+	De nuevo, se puede expresar la ley de Coulomb equivalentemente como:
+	\begin{equation}\label{LC2}
+	\vec{F}_{12}=-K\frac{q_1q_2}{|\vec{r}_{12}|^2}\hat{u}_{12} \left [N \right ]
+	\end{equation}
+	Con $\hat{u}_{12}$ denotamos el vector unitario que parte de la carga $1$ y apunta a la carga $2$.
+	
+	%¿Ponemos otro dibujo aquí?
+	
+	A diferencia de la interacción gravitatoria, la interacción eléctrica puede ser tanto atractiva (las cargas que interaccionan son de distinto signo) como repulsiva (las cargas tienen el mismo signo). Del mismo modo que la interacción gravitatoria, la interacción eléctrica actuará en la dirección del vector que une los cuerpos con carga.
 	
 	La constante $K$ se denomina Constante de Coulomb (medida por el propio Coulomb). Esta ''constante'' depende del medio en el que suceda la interacción, siendo igual a:
-	\begin{equation}
+	\begin{equation}\label{epsilon}
 	K=\frac{1}{4 \pi \varepsilon} \left [\frac{N\cdot m^2}{C^2} \right]
 	\end{equation}
 	donde $\varepsilon=\varepsilon_r \varepsilon_0$; siendo $\varepsilon_r$ la permitividad relativa del medio y $\varepsilon_0$ la permitividad en el vacío. 
 	
-	Las cargas eléctricas están cuantizadas, esto implica que existe una unidad de carga fundamental) la cual corresponde a la carga de un electrón $e=1.602\cdot 10^{-19}C$
+	Las cargas eléctricas están cuantizadas, esto implica que existe una unidad de carga fundamental) la cual corresponde a la carga de un electrón $e:=q(e^-)\simeq1.602\cdot 10^{-19}C$.
 	
-	Puede notarse que la interacción eléctrica es mucho más fuerte que la interacción gravitatoria (Como ejemplo, la fuerza electrica entre dos protones es $10^{36}$ veces más potente que la interacción gravitatoria entre ellos).
+	\subsection{Comparación entre fuerza gravitatoria y eléctrica}
+	Puede notarse que la interacción eléctrica es mucho más fuerte que la interacción gravitatoria (Por ejemplo, la fuerza eléctrica entre dos protones es $10^{36}$ veces más potente que la interacción gravitatoria entre ellos). Lo demostramos en el apéndice A.
 	
+	%Aún hay que hacerlo.	
 	
-	\section{Campo Gravitatorio y Electrico}
+	\section{Campo Gravitatorio y Eléctrico}
+	\subsection{Concepto de campo}
 	Se dice que existe un campo asociado a una magnitud física, en una región del espacio, si se puede asignar un valor a dicha magnitud para todos los puntos de dicha región en cada instante.
 	
-	El campo gravitatorio $\vec{g}$ es aquella región del espacio donde una masa $m_0$ experimenta una fuerza gravitatoria debido a otra masa.
-	\begin{equation}
-	\vec{g}=\frac{\vec{F_g}}{m_0} =-G\frac{m}{|\vec{r_{12}}|^3}\vec{r_{12}}\left [\frac{N}{Kg} \right]
+	%Sería interesante un dibujo y la diferencia entre campo vectorial y escalar
+	
+	\subsection{Campo gravitatorio}
+	El campo gravitatorio $\vec{g}$ (también llamado intensidad de campo gravitatorio) en un punto es la fuerza gravitatoria que experimentaría una masa de $1\;kg$ que se encontrara en ese punto debido a la interacción gravitatoria con una o varias masas (llamadas masas generadoras del campo). 
+	\paragraph{Campo generado por una única masa:} En este caso se cumple:
+	\begin{equation}\label{cg1}
+	\vec{g}=\dfrac{F_g}{m}
+	\end{equation}  
+	\paragraph{Campo generado por una única partícula puntual:} Ahora podemos usar (\ref{GU1}) y obtenemos:
+	\begin{equation}\label{cg1p1}
+	\vec{g}=\dfrac{F_g}{m}=-\dfrac{G\frac{Mm}{|\vec{r}_{12}|^3}}{m}\vec{r}_{12}=-G\frac{M}{|\vec{r}_{12}|^3}\vec{r}_{12}\left [\frac{N}{Kg} \right]
+	\end{equation}
+	Si usamos (\ref{GU2}) en vez de (\ref{GU1}), obtenemos la expresión equivalente:
+	\begin{equation}\label{cg1p2}
+	\vec{g}=\dfrac{F_g}{m}=-\dfrac{G\frac{Mm}{|\vec{r}_{12}|^2}}{m}\hat{u}_{12}=-G\frac{M}{|\vec{r}_{12}|^2}\hat{u}_{12}\left [\frac{N}{Kg} \right]
 	\end{equation}
 	
-	El campo eléctrico $\vec{E}$ es aquella región del espacio donde una carga $q_0$ experimenta una fuerza eléctrica debido a otra carga. Por convenio, se considerará a la carga causante del campo como "positiva". Una particularidad de este campo es el hecho de que las particulas con carga positiva experimentan fuerzas en la dirección del campo $\vec{E}$, mientras que las partículas con cargas negativas experimentan fuerzas en dirección contraria.
-	\begin{equation}
-	\vec{E}=\frac{\vec{F_e}}{q_0} \left [\frac{N}{C} \right]
+	\paragraph{En general:} Se cumple:	
+	\begin{equation}\label{cgG}
+	\vec{g}=\dfrac{\sum_i \vec{F}_{g,A,i}}{m} \left [\frac{N}{Kg} \right]
 	\end{equation}
 	
+	La notación anterior puede parecer obscura, pero es una forma de expresar el sumatorio de todas las fuerzas gravitatorias que actúan sobre una masa que se encuentra en el punto $A$.
 	
-	\section{Lineas de Campo}
-	Las lineas de campo son un metodo gráfico para la facil visualización del campo vectoriar que representa; forman un mapa de campo. Cada línea está dibujada de forma que el campo es tangente a la misma en cada punto de ésta y las puntas de las flechas indican la dirección del campo (Suponiendo una carga positiva). El espacio entre ellas indica el valor del campo. En las regiones en donde las líneas están muy juntas este es muy grande, mientras que donde están muy separadas es muy pequeño. De aquí se deduce que la densidad de líneas es proporcional al campo. Así, un campo uniforme estará representado por líneas de campo igualmente espaciadas, rectas y paralelas. Además las líneas de campo definen superficies equipotenciales perpendiculares a estas.
+	\paragraph{Nota:}Si las únicas fuerzas que actúan sobre la partícula hipótetica que colocamos en el punto en el que estamos calculado el campo son gravitatorias, entonces se cumple que la aceleración que sufre la partícula es justamente el campo: $\vec{a}=\vec{g}$.
 	
-	Las lineas de campo pueden ser abiertas (como es el caso del campo gravitatorio) o cerradas (como en el eléctrico), así en el campo eléctrico las lineas ''nacen'' en las cargas positivas (fuente) y acaban en las cargas negativas (sumidero).
+	\subsection{Campo eléctrico}
+	El campo eléctrico $\vec{E}$ (también llamado intensidad de campo eléctrico) en un punto es la fuerza eléctrica que sufriría una carga de $+1C$ situada en dicho punto debido a la interacción eléctrica con una o varias cargas (llamadas cargas generadoras del campo). Una particularidad de este campo es el hecho de que las partículas con carga positiva experimentan fuerzas en la dirección del campo $\vec{E}$, mientras que las partículas con cargas negativas experimentan fuerzas en dirección contraria. Análogamente al caso gravitatorio, tenemos los siguientes casos.
+		\paragraph{Campo generado por una única carga:} En este caso se cumple:
+	\begin{equation}\label{ce1}
+	\vec{E}=\dfrac{F_e}{m}
+	\end{equation}  
+	\paragraph{Campo generado por una única partícula puntual:} Ahora podemos usar (\ref{LC1}) y obtenemos:
+	\begin{equation}\label{ce1p1}
+	\vec{E}=\dfrac{F_e}{m}=\dfrac{K\frac{Qq}{|\vec{r}_{12}|^3}}{m}\vec{r}_{12}=-K\frac{Q}{|\vec{r}_{12}|^3}\vec{r}_{12}\left [\frac{N}{C} \right]
+	\end{equation}
+	Si usamos (\ref{LC2}) en vez de (\ref{GU1}), obtenemos la expresión equivalente:
+	\begin{equation}\label{ce1p2}
+	\vec{E}=\dfrac{F_e}{m}=\dfrac{K\frac{Qq}{|\vec{r}_{12}|^2}}{m}\hat{u}_{12}=-K\frac{Q}{|\vec{r}_{12}|^2}\hat{u}_{12}\left [\frac{N}{C} \right]
+	\end{equation}
+	
+	\paragraph{En general:} Se cumple:	
+	\begin{equation}\label{ceG}
+	\vec{E}=\dfrac{\sum_i \vec{F}_{e,A,i}}{m} \left [\frac{N}{C} \right]
+	\end{equation}
+	
+	\paragraph{Nota:}Si las únicas fuerzas que actúan sobre la partícula hipótetica que colocamos en el punto en el que estamos calculado el campo son eléctricas, entonces se cumple que la aceleración que sufre la partícula es justamente el campo: $\vec{a}=\vec{E}$.
+	
+	\section{Líneas de Campo}
+	Las líneas de campo son un método gráfico para la fácil visualización del campo vectorial que representan; forman un mapa de campo. Cada línea está dibujada de forma que el campo es tangente a la misma en cada punto de ésta y las puntas de las flechas indican la dirección del campo (Suponiendo una carga positiva). El espacio entre ellas indica el valor del campo. En las regiones en donde las líneas están muy juntas, éste es muy grande, mientras que donde están muy separadas, es muy pequeño. De aquí se deduce que la densidad de líneas es proporcional al campo. Así, un campo uniforme estará representado por líneas de campo igualmente espaciadas, rectas y paralelas. Además las líneas de campo definen superficies equipotenciales perpendiculares a éstas.
+	
+	Las líneas de campo pueden ser abiertas (como es el caso del campo gravitatorio) o cerradas (como en el eléctrico). Así, en el campo eléctrico las líneas ''nacen'' en las cargas positivas (fuente) y acaban en las cargas negativas (sumidero).
 	
 	\begin{center}
 		\begin{tikzpicture}
@@ -112,26 +168,34 @@
 		\draw [->] (-0.3, -0.3) -- (-1.6, -1.6);
 		\draw [<-] (4.3, 0.3)--(5.6, 1.6);
 		\draw [<-] (4.3, -0.3)--(5.6, -1.6);
-		\node at (4,0) {-};
-		\node (0,0) {+};
+		\node [color=white] at (4,0) {-};
+		\node [color=white] (0,0) {+};
 		
 	\end{tikzpicture}
 	\end{center}
 	
-	\section{Calculo del Campo Generado por Distribuciones de Carga/Masa}
-	Según el principio de superposición de campos, el campo generado por un sistema de partículas es igual a la suma de los campos generados por las particulas individuales.
+	\section{Cálculo del Campo Generado por Distribuciones de Carga/Masa}
+	Según el principio de superposición de campos (según vimos en (\ref{ceG}) y (\ref{cgG})), el campo generado por un sistema de partículas es igual a la suma de los campos generados por las partículas individuales.
 	
-	En el caso de ser un sistema simple de particulas, puede calcularse mediante sumatorios:
-	\begin{equation}
-	\vec{g}=\sum_i \vec{g_i} =-G\sum_i \frac{m_i}{|r_i|^3}\vec{r_i} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\sum_i \vec{E_i} =-K\sum_i \frac{q_i}{|r_i|^3}\vec{r_i} \left[\frac{N}{C} \right]
+	Si se trata de partículas puntuales las expresiones anteriores se reducen a:
+	\begin{equation}\label{cSP1}
+	\vec{g}=\sum_i \vec{g}_i =-G\sum_i \frac{m_i}{|\vec{r}_i|^3}\vec{r}_i \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\sum_i \vec{E}_i =K\sum_i \frac{q_i}{|\vec{r}_i|^3}\vec{r}_i \left[\frac{N}{C} \right]
 	\end{equation}
-	Mientras que en un sistema continuo de partículas, cada diferencial de volumen generará un diferencial de campo, los cuales se sumarán mediante la integración de los mismos:
-	\begin{equation}
-	\vec{g}=\int d\vec{g} =-G\int \frac{dm}{|r|^3}\vec{r} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\int d\vec{E} =-K\int \frac{dq}{|r|^3}\vec{r} \left[\frac{N}{C} \right]
+	O, alternativamente:
+	\begin{equation}\label{cSP2}
+	\vec{g}=\sum_i \vec{g}_i =-G\sum_i \frac{m_i}{|\vec{r}_i|^2}\hat{u}_i \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\sum_i \vec{E}_i =K\sum_i \frac{q_i}{|\vec{r}_i|^2}\hat{u}_i \left[\frac{N}{C} \right]
+	\end{equation}
+	Cuando el número de partículas es muy grande y las partículas están muy próximas unas de otras (como en cualquier objeto sólido), supondremos que se trata de un medio continuo y aproximaremos los sumatorios por una integral. Damos una explicación matemática en el apéndice A. Las expresiones de (\ref{cSP1}) y (\ref{cSP2}), quedan:
+	\begin{equation}\label{cI1}
+	\vec{g}=\int d\vec{g} =-G\int \frac{dm}{|\vec{r}|^3}\vec{r} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\int d\vec{E} =K\int \frac{dq}{|\vec{r}|^3}\vec{r} \left[\frac{N}{C} \right]
+	\end{equation}
+	O alternativamente:
+	\begin{equation}\label{cI2}
+		\vec{g}=\int d\vec{g} =-G\int \frac{dm}{|\vec{r}|^2}\hat{u} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\int d\vec{E} =K\int \frac{dq}{|\vec{r}|^2}\hat{u} \left[\frac{N}{C} \right]
 	\end{equation}
 
 	\subsection{Campo Gravitatorio de dos Partículas Puntuales}
-	Sean dos particulas puntuales de masa $m$ situadas en el eje y de forma simetrica (tal como se representa), calcular el valor del campo gravitatorio en un punto cualquiera del eje x.
+	\paragraph{Ejercicio:}Sean dos partículas puntuales de masa $m$ situadas en el eje y de forma simétrica (tal como se representa), calcular el valor del campo gravitatorio en un punto cualquiera del eje x.
 	
 	\begin{center}
 		\begin{tikzpicture}
@@ -156,19 +220,38 @@
 		\end{tikzpicture}
 	\end{center}
 	
-	Lo primero que notamos al analizar el sistema de particulas, es que debido a la simetría, la componente del campo en dirección $y$ será nula, or lo tanto:
+	\paragraph{Realización:}Lo primero que notamos al analizar el sistema de partículas es que, debido a la simetría, la componente del campo en la dirección $y$ será nula; por lo tanto, nos basta con calcular la componente horizontal:
 	\begin{equation*}
-	\vec{g}=|\vec{g_1}| \cos \theta + |\vec{g_2}| \cos \theta \vec{i} \left[\frac{N}{Kg} \right]\hspace{1.3cm} |\vec{g_1}|=|\vec{g_2}|=G\frac{m}{r^2} \left[\frac{N}{Kg} \right]
+	\vec{g}=-|\vec{g_1}| \cos \theta\hat{i} - |\vec{g_2}| \cos \theta \hat{i}
 	\end{equation*}
+	Ahora, notemos:
 	\begin{equation*}
-	\vec{g}=-2|\vec{g_1}| \cos \theta \vec{i}=-2G\frac{m}{r^2}\cos \theta \vec{i}=-2G\frac{m}{r^2}\cdot \frac{x}{r} \vec{i}=-2G\frac{m}{(x^2+a^2)^{3/2}} \vec{i}\left[\frac{N}{Kg} \right]
+	|\vec{g_1}|=|\vec{g_2}|=G\frac{m}{r^2}
 	\end{equation*}
+	Sustituyamos:
+	\begin{equation*}
+	\vec{g}=-2|\vec{g_1}| \cos \theta \hat{i}=-2G\frac{m}{r^2}\cos \theta \hat{i}
+	\end{equation*}
+	Por el dibujo, es fácil ver que $\cos \theta = \dfrac{x}{r}$ y $r^2=a^2+x^2$. Haciendo estos cambios:
+	\begin{align*}
+	\vec{g}&=-2G\frac{m}{r^2}\cos \theta \hat{i}=-2G\dfrac{m}{x^2+a^2}\cdot\dfrac{x}{r}\hat{i}=-2G\dfrac{m}{x^2+a^2}\cdot\dfrac{x}{\sqrt{x^2+a^2}}\hat{i}=\\
+	&=-2G\frac{mx}{(x^2+a^2)^{3/2}}
+	\end{align*}
+	\paragraph{Solución:} $\vec{g}=-2G\dfrac{mx}{(x^2+a^2)^{3/2}} \hat{i}\left[\frac{N}{Kg} \right]$.
 	
-	Así, la solución al problema será $\vec{g}=-2G\frac{m}{(x^2+a^2)^{3/2}} \vec{i}\left[\frac{N}{Kg} \right]$.
+	\subsection{Pequeña introducción a las densidades de masa y de carga}
+	A lo largo de los ejercicios posteriores vamos a usar $\lambda$,$\sigma$,$\rho$ para representar densidades de carga y de masa. El uso de una letra u otra depende de la dimensiones del objeto que estemos tratando; así:
+	\begin{itemize}
+		\item Lineal $L$ (longitud): $\lambda:=\dfrac{dq}{dL}=\dfrac{q}{L}$
+		\item Superficie $S$ (superficie): $\sigma:=\dfrac{dq}{dS}=\dfrac{q}{S}$
+		\item Volumen $V$ (volumen): $\rho:=\dfrac{dq}{dV}=\dfrac{q}{V}$
+	\end{itemize}
+	\paragraph{Nota:} la definición en el caso de masa es igual, cambiando 
+	''$q$'' por ''$m$''.
 	
-	\subsection{Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (horizontal)}
+	\subsection{Campo Gravitatorio generado por una Varilla de Densidad Lineal Uniforme (horizontal)}
 	\paragraph{Ejercicio:}
-	Sea una varilla uniforme de longitud $L$ cuyo centro está situado en el eje de coordenadas, calcular el valor del campo generado por la varilla en un punto cualquiera del eje x.
+	Sea una varilla uniforme de longitud $L$ cuyo centro está situado en el eje de coordenadas. Calcular el valor del campo generado por la varilla en un punto cualquiera del eje x.
 	
 	\begin{center}
 		\begin{tikzpicture}
@@ -178,29 +261,112 @@
 			\draw [line width=5] [red] (2.4,0)--(2.8,0);
 			\draw [|-|] (2.4,-0.2)--(2.8,-0.2);
 			\draw [|-|] (-3.5,0.5)--(0,0.5);
+			\draw [|-|] (0,1)--(2.4,1);
+			\draw [|-|]	(0,-1)--(5,-1);
 			\draw [fill] (5,0) circle [radius=0.1];
 			\node [below] at (2.6,-0.3) {dx};
 			\node [below left] at (0,2.5) {y};
 			\node [below left] at (6,0) {x};
 			\node [above] at (-1.75,0.5) {$\frac{L}{2}$};
+			\node [below] at (1.2,1) {$x$}; 
+			\node [below] at (2.5,-1) {$x_0$}; 
+			\node [above] at (5,0) {$P$};
 			\node [below left] at (0,0) {0};
 		\end{tikzpicture}
 	\end{center}
 	\paragraph{Realización:}
-	Al observar la posición de la varilla respecto al eje $x$ podemos ver que no existirá componente del campo en el eje $y$. Debemos comenzar tomanto un diferencial de longitud de la varilla en un punto cualquiera de esta y estudiar el campo que genera; siendo este el generado por una particula aislada (ecuación 1.5)
+	Al observar la posición de la varilla respecto al eje $x$ podemos ver que no existirá componente del campo en el eje $y$. Debemos comenzar tomando un diferencial de longitud de la varilla en un punto cualquiera de ésta y estudiar el campo que genera. Conviene tomar un diferencial \textbf{lo más general posible}, evitando, los puntos que estén en la mitad o en los extremos; pues pueden llevarnos a confusión. Vamos a tratar nuestro $dx$ como una partícula puntual y sirviéndonos de (\ref{cI2}), vamos a calcular el campo generado por la varilla, integrando:
 	\begin{equation*}
-	d\vec{g}=-G\frac{dm}{r^2}\vec{i}=-G\frac{\lambda dx}{(x_0-x)^2)}\vec{i}\left [N \right ]
+	d\vec{g}=-G\frac{dm}{r^2}\hat{i}
 	\end{equation*}
-	\begin{equation*}
-	\vec{g}=\int d \vec{g}=\int_{-\frac{L}{2}}^{\frac{L}{2}} \left( -G\frac{\lambda dx}{(x_0-x)^2)}\vec{i}\right)=-G\lambda \left( \int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{1}{(x_0-x)^2)}dx\right)\vec{i}
-	\end{equation*}
-	\begin{equation*}
-	\vec{g}=G\lambda \left(\frac{1}{x_0-\frac{L}{2}}+\frac{1}{x_0+\frac{L}{2}}\right)\vec{i}=-G\frac{m}{x^2-\left ( \frac{L}{2} \right)^2}\vec{i} \left[\frac{N}{Kg} \right]
-	\end{equation*}
+	Usando $dm=\lambda dx$:
 	
-	Así, la solución al problema será $\vec{g}=-G\frac{m}{x^2-\left ( \frac{L}{2} \right)^2}\vec{i} \left[\frac{N}{Kg} \right]$.
+	\begin{align*}
+	d\vec{g}&=-G\frac{\lambda dx}{(x_0-x)^2}\hat{i}\Leftrightarrow\\
+	\Leftrightarrow \vec{g}&=\int d \vec{g}=\int_{-\frac{L}{2}}^{\frac{L}{2}} \left( -G\frac{\lambda dx}{(x_0-x)^2}\hat{i}\right)=-G\lambda \left( \int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{1}{(x_0-x)^2}dx\right)\hat{i}\Leftrightarrow \\
+	\Leftrightarrow\vec{g}&=-G\lambda\left[ \dfrac{1}{x_0-x} \right]_{\frac{L}{2}}^{\frac{L}{2}}\hat{i}=-G\lambda \left(\dfrac{1}{x_0-\frac{L}{2}}-\frac{1}{x_0+\dfrac{L}{2}}\right)\hat{i}=-G \lambda\left(\frac{x_{0}+\frac{L}{2}-x_{0}+\frac{L}{2}}{x_{0}^{2}-\left(\frac{L}{2}\right)^{2}}\right)\hat{i}=\\
+	&=-\frac{G\lambda L}{x_{0}^{2}-\left(\frac{L}{2}\right)^{2}}\hat{i}=-\frac{Gm}{x_{0}^{2}-\left(\frac{L}{2}\right)^{2}}\hat{i} \left[\frac{N}{Kg} \right]
+	\end{align*}
+	\paragraph{Solución:} $\vec{g}=-\dfrac{Gm}{x_{0}^{2}-\left(\frac{L}{2}\right)^{2}}\hat{i} \left[\dfrac{N}{Kg} \right]$
+	
+	\paragraph{Nota:} Esta fórmula sólo sirve para el caso $x_0>\dfrac{L}{2}$.
+	\paragraph{Nota:} Se puede llegar a la expresión de la solución de muchas maneras diferentes. Independientemente del método seguido, la solución es única. En el apéndice B se presentan más formas de hacer este ejercicio.
+	\paragraph{Nota:} Nótese que en todos estos casos, no hay simetría. Para ver si la hay, cogemos dos puntos a la misma distancia del eje vertical y vemos si generan el mismo campo.
+	
+	\paragraph{Límite: $x\gg L$:} $\vec{g}=-\dfrac{Gm}{x_{0}^{2}-\left(\frac{L}{2}\right)^{2}}\hat{i}\overset{x\gg L}{\simeq}-\dfrac{Gm}{x_0^2}\hat{i}\left[\dfrac{N}{Kg} \right]$. (Como una partícula puntual).
+
+	
 	
 	\subsection{Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (Vertical)}
+	
+	\paragraph{Ejercicio:} Sea una varilla uniforme de longitud $L$ cuyo centro está situado en el eje de coordenadas. Calcular el valor del campo generado por la varilla en un punto cualquiera del eje x.
+	
+	\begin{center}
+		\begin{tikzpicture}
+		\draw [very thick] [->] (-4,0) -- (6,0);
+		\draw [very thick] [->] (0, -3.0)-- (0,3.0);
+		\draw [line width=5] [gray] (0,-2)--(0,2);
+		\draw [line width=5] [red] (0,1)--(0,1.2);
+		\draw [fill] (5,0) circle [radius=0.1];
+		\draw [-] (0,1.1)--(5,0);
+		\draw [|-|] (-0.2,1)--(-0.2,1.2);
+		\draw [|-|] (-1,0)--(-1,1.1);
+		\draw [|-|] (0,-0.3)--(5,-0.3);
+		\draw [|-|] (-1.5,-2)--(-1.5,2);
+		\draw (3.1,0.435) arc (155:180:1);
+		\node [below] at (2.5,-0.3) {$x$};
+		\node [below left] at (0,3) {y};
+		\node [below left] at (6,0) {x};
+		\node [left] at (-0.2,1.1) {$dm$};
+		\node [left] at (-1,0.55) {$y$};
+		\node [above] at (2.5,0.55) {$r$};
+		\node [above] at (5,0) {$P$};
+		\node [below left] at (-1.5,0) {$L$};
+		\node [below left] at (3.1,0.435) {$\alpha$};
+		\node [below left] at (0,0) {0};
+		\end{tikzpicture}
+	\end{center}
+	
+	\paragraph{Realización:}
+	Basándonos en el dibujo, podemos ver: 
+	\begin{equation*}
+	d\vec{g}=G\frac{dm}{r^{2}}\hat{i}
+	\end{equation*}
+	Nótese que las componentes verticales de los $d\vec{g}$ se anulan al sumar. De esta forma, podemos centrarnos únicamente en la componente horizontal. Así:
+	\begin{equation*}
+		d\vec{g}=-\dfrac{Gdm}{r^{2}}\cos\alpha\;\hat{i}
+	\end{equation*}
+	Ahora nuestro objetivo es expresarlo todo como una sola variable para poder integrar. Teniendo en cuenta $dm=\lambda dy$ y $r^{2}=x^{2}+y^{2}$, podemos expresar el $\cos\alpha$ como:
+	\begin{equation*}
+	\cos\alpha=\frac{x}{r}=\frac{x}{\sqrt{x^{2}+y^{2}}}
+	\end{equation*}
+	Haciendo todas las sustituciones oportunas, llegamos a:
+	\begin{equation*}
+	d\vec{g}=-\dfrac{G\lambda dy}{x^{2}+y^{2}}\frac{x}{\sqrt{x^{2}+y^{2}}}\hat{i}=- \dfrac{G\lambda xdy}{\left(x^{2}+y^{2}\right)^{\frac{3}{2}}}\hat{i}
+	\end{equation*}
+	Ahora ya podemos integrar:
+	\begin{equation*}
+	\vec{g}=-\int_{-\frac{L}{2}}^{\frac{L}{2}}\frac{G\lambda dyx}{\left(x^{2}+y^{2}\right)^{\frac{3}{2}}}\hat{i}\overset{\text{simetría}}{=}-2\int_{0}^{\frac{L}{2}}\frac{G\lambda dyx}{\left(x^{2}+y^{2}\right)^{\frac{3}{2}}}\hat{i}
+	\end{equation*}
+	Hacemos el siguiente cambio de variable:
+	\begin{equation*}
+	\tan\alpha=\frac{y}{x}\Leftrightarrow y=x\tan\alpha \hspace{1cm} dy=x\frac{1}{\cos^{2}\alpha}d\alpha \hspace{1cm} \displaystyle \tan\alpha_{m\acute{a}x}=\frac{\frac{L}{2}}{x}=\frac{L}{2x}\Leftrightarrow\alpha_{m\acute{a}x}=\arctan\left(\dfrac{L}{2x}\right)
+	\end{equation*}
+	Así, tenemos:
+	\begin{align*}
+	&-2 \int_{0}^{\arctan\frac{L}{2x}}\dfrac{G\lambda x}{\left(x^{2}\left(1+\tan^{2}\alpha\right)\right)^{\frac{3}{2}}}\dfrac{x}{\cos^{2}\alpha}d\alpha\hat{i}=-2G\lambda x^{2}\int_{0}^{\arctan\frac{L}{2x}}\dfrac{d\alpha}{\cos^{2}\alpha\cdot x^{3}\left(1+\tan^{2}\alpha\right)^{\frac{3}{2}}}\hat{i}=\\
+	=&-\dfrac{2G\lambda}{x}\int_{0}^{\arctan\frac{L}{2x}}\dfrac{d\alpha}{\cos^{2}\alpha\left(1+\dfrac{\sin^{2}\alpha}{\cos^{2}\alpha}\right)^{\frac{3}{2}}}\hat{i}=-\dfrac{2G\lambda}{x}\int_{0}^{\arctan\frac{L}{2x}}\dfrac{d\alpha}{\cos^{2}\alpha\left(\dfrac{\cos^{2}\alpha+\sin^{2}\alpha}{\cos^{2}\alpha}\right)^{\frac{3}{2}}}\hat{i}=\\
+	=&-\dfrac{2G\lambda}{x}\int_{0}^{\arctan\frac{L}{2x}}\dfrac{d\alpha}{\dfrac{\cos^{2}\alpha}{\cos^{3}\alpha}}\hat{i}=-\dfrac{2G\lambda}{x}\int_{0}^{\arctan\frac{L}{2x}}\cos\alpha d\alpha\hat{i}=\dfrac{2G\lambda}{x}\left[\sin\alpha\right]_{0}^{\arctan\frac{L}{2x}}\hat{i}=\\
+	=&-\dfrac{2G\lambda}{x}\sin\left(\arctan\left(\dfrac{L}{2x}\right)\right)\hat{i}\overset{\text{Ver nota}}{=}-\dfrac{2G\lambda}{x}\sqrt{1-\dfrac{1}{1+\left(\dfrac{L}{2x}\right)^{2}}}\hat{i}=\dfrac{2G\lambda}{x}\sqrt{1-\dfrac{1}{1+\dfrac{L^{2}}{4x^{2}}}}\hat{i}=\\
+	=&-\dfrac{2G\lambda}{x}\sqrt{1-\dfrac{x^{2}}{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}=-\dfrac{2G\lambda}{x}\sqrt{\dfrac{x^{2}+\left(\dfrac{L}{2}\right)^{2}-x^{2}}{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}=-\dfrac{2G\lambda}{x}\dfrac{L}{2}\sqrt{\dfrac{1}{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}=\\
+	=&-\dfrac{G\lambda L}{x\sqrt{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}\overset{\lambda L=m}{=}-\dfrac{Gm}{x\sqrt{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}
+	\end{align*}
+	\paragraph{Solución:}$\vec{g}=-\dfrac{Gm}{x\sqrt{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}\left[\dfrac{N}{Kg} \right]$
+	\paragraph{Nota:} Ofrecemos una explicación de ese paso en el apéndice A.
+	\paragraph{Límite $x\gg L$:} $\vec{g}=-\dfrac{Km}{x\sqrt{x^{2}+\left(\frac{L}{2}\right)^{2}}}\hat{i}\overset{x\gg L}{\simeq}-\dfrac{Km}{x\sqrt{x^{2}}}\hat{i}=-\dfrac{Km}{x^{2}}\hat{i}\left[\dfrac{N}{Kg} \right]$
+	\paragraph{Límite $x\ll L$:}
+	$\vec{g}=-\dfrac{Km}{x\sqrt{x^{2}+\left(\frac{L}{2}\right)^{2}}}\hat{i}\overset{x\ll L}{\simeq}-\dfrac{Km}{x\sqrt{\left(\dfrac{L}{2}\right)^{2}}}\hat{i}=-\dfrac{Km}{x\frac{L}{2}}\hat{i}=-\dfrac{2Km}{Lx}\hat{i}\overset{m=\lambda L}{=}-\dfrac{2K\lambda L}{Lx}\hat{i}=-\dfrac{2K\lambda}{x}\hat{i}\left[\dfrac{N}{Kg} \right]$
+	
 	\subsection{Campo Gravitatorio Generado por un Anillo Uniforme}
 	\paragraph{Ejercicio:}
 	Sea un anillo con masa $m$ y de radio $a$ situado en el plano $YZ$ y centrado en el origen de coordenadas, calcular el valor del campo generado por el mismo en un punto cualquiera del eje $X$.
