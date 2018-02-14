@@ -6,7 +6,7 @@
 \renewcommand{\figurename}{Figura}
 \renewcommand{\tablename}{Tabla}
 \renewcommand{\bibname}{Bibliografía}
-\renewcommand{\chaptername}{Capitulo}
+\renewcommand{\chaptername}{Capítulo}
 %
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
@@ -15,7 +15,7 @@
 \usepackage{graphicx}
 %tikzs para hacer ilustraciones
 \usepackage{tikz}
-%titulo
+%título
 \author{Cano Jones, Alejandro}
 \title{Fundamentos de la Física II}
 \date{Curso 2017-2018}
@@ -26,11 +26,11 @@
 	\tableofcontents
 	\chapter{Campos Conservativos}
 	\section{Interacción Gravitatoria y Eléctrica}
-	Definimos interacción como una acción reciproca entre dos o más cuerpos, en esta sección, trataremos las interacciones (fuerzas) gravitatorias y eléctricas, las cuales actuan sobre cuerpos con masa o con carga eléctrica (respectivamente).
+	Definimos interacción como una acción recíproca entre dos o más cuerpos. En esta sección, trataremos las interacciones (fuerzas) gravitatorias y eléctricas, las cuales actúan sobre cuerpos con masa o con carga eléctrica (respectivamente).
 	
-	Comenzando con la interacción gravitatoria, esta se ve definida mediante la llamada ley de Newton (1687 Sir Isaac Newton):
+	Comenzando con la interacción gravitatoria, ésta se ve definida mediante la llamada ley de Newton (1687 Sir Isaac Newton):
 	\begin{equation}
-	\vec{F_{12}}=-G\frac{m_1m_2}{|\vec{r_{12}}|^3}\vec{r_{12}} \left [N \right ]
+	\overrightarrow{F_{12}}=-G\frac{m_1m_2}{|\vec{r_{12}}|^3}\overrightarrow{r_{12}} \left [N \right ]
 	\end{equation}
 	\begin{center}
 		\begin{tikzpicture}
@@ -48,25 +48,26 @@
 	\end{tikzpicture}
 	\end{center}
 	
-	Esta será una fuerza atractiva que aparece como interacción entre dos cuepos con masas $m_1$ y $m_2$. Esta fuerza siempre actuará de forma atractiva y en la dirección del vector que une dichos cuerpos.
+	%Este párrafo dice dos veces lo mismo; tenemos que cambiarlo.
+	Esta será una fuerza atractiva que aparece como interacción entre dos cuerpos con masas $m_1$ y $m_2$. Esta fuerza siempre actuará de forma atractiva y en la dirección del vector que une dichos cuerpos.
 	
-	$G$ es una constante denominada constante de gravitación universal (medida por primera vez en 1798 por Henry Cavendish). Las unidades que posee en el sistema internacional de unidades (SI) se describen para que la fuerza gravitatoria sea dimensionalmente correcta, esto es, que posea unidades newton [N].
+	$G$ es una constante denominada constante de gravitación universal (medida por primera vez en 1798 por Henry Cavendish). Las unidades que posee en el sistema internacional de unidades (SI) se escogen para que la fuerza gravitatoria sea dimensionalmente correcta, esto es, que posea unidades newton [N].
 	\begin{equation}
-	G=6.674\cdot 10^{-11} \left [\frac{N\cdot m^2}{Kg^2} \right ]
+	G\simeq 6.674\cdot 10^{-11} \left [\frac{N\cdot m^2}{Kg^2} \right ]
 	\end{equation}
 	
 	La interacción eléctrica se define mediante la ley de Coulomb (1785 Charles-Augustin de Coulomb):
 	\begin{equation}
-	\vec{F_{12}}=-K\frac{q_1q_2}{|r_{12}|^3}\vec{r_{12}} \left [N \right ]
+	\overrightarrow{F_{12}}=-K\frac{q_1q_2}{|r_{12}|^3}\overrightarrow{r_{12}} \left [N \right ]
 	\end{equation}
 	
-	A diferencia de la interacción gravitatoria, la interacción eléctrica puede se tanto atractiva (las cargas que interaccionan son de distinto signo) como repulsiva (las cargas tienen el mismo signo). Del mismo modo que la interacción gravitatoria, la eléctrica actuará en la dirección del vector que une los cuerpos con carga.
+	A diferencia de la interacción gravitatoria, la interacción eléctrica puede ser tanto atractiva (las cargas que interaccionan son de distinto signo) como repulsiva (las cargas tienen el mismo signo). Del mismo modo que la interacción gravitatoria, la eléctrica actuará en la dirección del vector que une los cuerpos con carga.
 	
 	La constante $K$ se denomina Constante de Coulomb (medida por el propio Coulomb). Esta ''constante'' depende del medio en el que suceda la interacción, siendo igual a:
 	\begin{equation}
-	K=\frac{1}{4 \pi \epsilon} \left [\frac{N\cdot m^2}{C^2} \right]
+	K=\frac{1}{4 \pi \varepsilon} \left [\frac{N\cdot m^2}{C^2} \right]
 	\end{equation}
-	donde $\epsilon=\epsilon_r \epsilon_0$; siendo $\epsilon_r$ la permitividad relativa del medio y $\epsilon_0$ la permitividad en el vacio. 
+	donde $\varepsilon=\varepsilon_r \varepsilon_0$; siendo $\varepsilon_r$ la permitividad relativa del medio y $\varepsilon_0$ la permitividad en el vacío. 
 	
 	Las cargas eléctricas están cuantizadas, esto implica que existe una unidad de carga fundamental) la cual corresponde a la carga de un electrón $e=1.602\cdot 10^{-19}C$
 	
