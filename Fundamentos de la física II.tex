@@ -1,0 +1,344 @@
+\documentclass[10pt,a4paper,final,openright,titlepage]{book}
+%Cambios de nombres 
+\renewcommand{\contentsname}{Contenido}
+\renewcommand{\partname}{Parte}
+\renewcommand{\appendixname}{Apéndice}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\bibname}{Bibliografía}
+\renewcommand{\chaptername}{Capitulo}
+%
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%tikzs para hacer ilustraciones
+\usepackage{tikz}
+%titulo
+\author{Cano Jones, Alejandro}
+\title{Fundamentos de la Física II}
+\date{Curso 2017-2018}
+
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\chapter{Campos Conservativos}
+	\section{Interacción Gravitatoria y Eléctrica}
+	Definimos interacción como una acción reciproca entre dos o más cuerpos, en esta sección, trataremos las interacciones (fuerzas) gravitatorias y eléctricas, las cuales actuan sobre cuerpos con masa o con carga eléctrica (respectivamente).
+	
+	Comenzando con la interacción gravitatoria, esta se ve definida mediante la llamada ley de Newton (1687 Sir Isaac Newton):
+	\begin{equation}
+	\vec{F_{12}}=-G\frac{m_1m_2}{|\vec{r_{12}}|^3}\vec{r_{12}} \left [N \right ]
+	\end{equation}
+	\begin{center}
+		\begin{tikzpicture}
+		\draw [ultra thin] (0,0) -- (5,2);
+		\draw [very thick] [red] [->] (0,0) -- (1.25,0.5);
+		\draw [very thick] [red] [->] (5,2) -- (3.75,1.5);
+		\draw [thick] [|->] (4.7,2.5)--(-0.3,0.5);
+		\fill[ball color=blue] (0,0) circle (0.3);
+		\fill[ball color=blue] (5,2) circle (0.3);
+		\node[below] at (-0.2,-0.4) {$m_1$};
+		\node[above] at (5.5,2.2) {$m_2$};
+		\node[above] at (2,1.5) {$\vec{r_{12}}$};
+		\node[below] at (4.5,1.5) {$\vec{F_{12}}$};
+		\node[below] at (0.9,0.2) {$\vec{F_{21}}$};
+	\end{tikzpicture}
+	\end{center}
+	
+	Esta será una fuerza atractiva que aparece como interacción entre dos cuepos con masas $m_1$ y $m_2$. Esta fuerza siempre actuará de forma atractiva y en la dirección del vector que une dichos cuerpos.
+	
+	$G$ es una constante denominada constante de gravitación universal (medida por primera vez en 1798 por Henry Cavendish). Las unidades que posee en el sistema internacional de unidades (SI) se describen para que la fuerza gravitatoria sea dimensionalmente correcta, esto es, que posea unidades newton [N].
+	\begin{equation}
+	G=6.674\cdot 10^{-11} \left [\frac{N\cdot m^2}{Kg^2} \right ]
+	\end{equation}
+	
+	La interacción eléctrica se define mediante la ley de Coulomb (1785 Charles-Augustin de Coulomb):
+	\begin{equation}
+	\vec{F_{12}}=-K\frac{q_1q_2}{|r_{12}|^3}\vec{r_{12}} \left [N \right ]
+	\end{equation}
+	
+	A diferencia de la interacción gravitatoria, la interacción eléctrica puede se tanto atractiva (las cargas que interaccionan son de distinto signo) como repulsiva (las cargas tienen el mismo signo). Del mismo modo que la interacción gravitatoria, la eléctrica actuará en la dirección del vector que une los cuerpos con carga.
+	
+	La constante $K$ se denomina Constante de Coulomb (medida por el propio Coulomb). Esta ''constante'' depende del medio en el que suceda la interacción, siendo igual a:
+	\begin{equation}
+	K=\frac{1}{4 \pi \epsilon} \left [\frac{N\cdot m^2}{C^2} \right]
+	\end{equation}
+	donde $\epsilon=\epsilon_r \epsilon_0$; siendo $\epsilon_r$ la permitividad relativa del medio y $\epsilon_0$ la permitividad en el vacio. 
+	
+	Las cargas eléctricas están cuantizadas, esto implica que existe una unidad de carga fundamental) la cual corresponde a la carga de un electrón $e=1.602\cdot 10^{-19}C$
+	
+	Puede notarse que la interacción eléctrica es mucho más fuerte que la interacción gravitatoria (Como ejemplo, la fuerza electrica entre dos protones es $10^{36}$ veces más potente que la interacción gravitatoria entre ellos).
+	
+	
+	\section{Campo Gravitatorio y Electrico}
+	Se dice que existe un campo asociado a una magnitud física, en una región del espacio, si se puede asignar un valor a dicha magnitud para todos los puntos de dicha región en cada instante.
+	
+	El campo gravitatorio $\vec{g}$ es aquella región del espacio donde una masa $m_0$ experimenta una fuerza gravitatoria debido a otra masa.
+	\begin{equation}
+	\vec{g}=\frac{\vec{F_g}}{m_0} =-G\frac{m}{|\vec{r_{12}}|^3}\vec{r_{12}}\left [\frac{N}{Kg} \right]
+	\end{equation}
+	
+	El campo eléctrico $\vec{E}$ es aquella región del espacio donde una carga $q_0$ experimenta una fuerza eléctrica debido a otra carga. Por convenio, se considerará a la carga causante del campo como "positiva". Una particularidad de este campo es el hecho de que las particulas con carga positiva experimentan fuerzas en la dirección del campo $\vec{E}$, mientras que las partículas con cargas negativas experimentan fuerzas en dirección contraria.
+	\begin{equation}
+	\vec{E}=\frac{\vec{F_e}}{q_0} \left [\frac{N}{C} \right]
+	\end{equation}
+	
+	
+	\section{Lineas de Campo}
+	Las lineas de campo son un metodo gráfico para la facil visualización del campo vectoriar que representa; forman un mapa de campo. Cada línea está dibujada de forma que el campo es tangente a la misma en cada punto de ésta y las puntas de las flechas indican la dirección del campo (Suponiendo una carga positiva). El espacio entre ellas indica el valor del campo. En las regiones en donde las líneas están muy juntas este es muy grande, mientras que donde están muy separadas es muy pequeño. De aquí se deduce que la densidad de líneas es proporcional al campo. Así, un campo uniforme estará representado por líneas de campo igualmente espaciadas, rectas y paralelas. Además las líneas de campo definen superficies equipotenciales perpendiculares a estas.
+	
+	Las lineas de campo pueden ser abiertas (como es el caso del campo gravitatorio) o cerradas (como en el eléctrico), así en el campo eléctrico las lineas ''nacen'' en las cargas positivas (fuente) y acaban en las cargas negativas (sumidero).
+	
+	\begin{center}
+		\begin{tikzpicture}
+		\fill[ball color=red] (0,0) circle (0.3);
+		\fill[ball color=blue] (4,0) circle (0.3);
+		\draw [->] (0.35,0) -- (3.65,0);
+		\draw [->] (0.3,0.3) to [out=30, in=150] (3.7,0.3);
+		\draw [->] (0.3,-0.3) to [out=-30, in=220] (3.7,-0.3);
+		\draw [->] (0.2, 0.4) to [out=80, in=100] (3.8,0.4);
+		\draw [->] (0.2, -0.4) to [out=-80, in=-100] (3.8,-0.4);
+		\draw [->] (-0.35,0) -- (-2,0);
+		\draw [<-] (4.35,0)-- (6,0);
+		\draw [->] (0, 0.35) -- (0,2);
+		\draw [->] (0, -0.35) -- (0,-2);
+		\draw [<-] (4, 0.35) -- (4,2);
+		\draw [<-] (4, -0.35) -- (4,-2);
+		\draw [->] (-0.3, 0.3) -- (-1.6, 1.6);
+		\draw [->] (-0.3, -0.3) -- (-1.6, -1.6);
+		\draw [<-] (4.3, 0.3)--(5.6, 1.6);
+		\draw [<-] (4.3, -0.3)--(5.6, -1.6);
+		\node at (4,0) {-};
+		\node (0,0) {+};
+		
+	\end{tikzpicture}
+	\end{center}
+	
+	\section{Calculo del Campo Generado por Distribuciones de Carga/Masa}
+	Según el principio de superposición de campos, el campo generado por un sistema de partículas es igual a la suma de los campos generados por las particulas individuales.
+	
+	En el caso de ser un sistema simple de particulas, puede calcularse mediante sumatorios:
+	\begin{equation}
+	\vec{g}=\sum_i \vec{g_i} =-G\sum_i \frac{m_i}{|r_i|^3}\vec{r_i} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\sum_i \vec{E_i} =-K\sum_i \frac{q_i}{|r_i|^3}\vec{r_i} \left[\frac{N}{C} \right]
+	\end{equation}
+	Mientras que en un sistema continuo de partículas, cada diferencial de volumen generará un diferencial de campo, los cuales se sumarán mediante la integración de los mismos:
+	\begin{equation}
+	\vec{g}=\int d\vec{g} =-G\int \frac{dm}{|r|^3}\vec{r} \left[\frac{N}{Kg} \right] \hspace{1.3cm} \vec{E}=\int d\vec{E} =-K\int \frac{dq}{|r|^3}\vec{r} \left[\frac{N}{C} \right]
+	\end{equation}
+
+	\subsection{Campo Gravitatorio de dos Partículas Puntuales}
+	Sean dos particulas puntuales de masa $m$ situadas en el eje y de forma simetrica (tal como se representa), calcular el valor del campo gravitatorio en un punto cualquiera del eje x.
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [very thick] [->] (-1,0)--(7,0);
+			\draw [very thick] [->] (0,-3)--(0,3);
+			\fill [ball color=red] (0,2.3) circle (0.25);
+			\fill [ball color=red] (0,-2.3) circle (0.25);
+			\draw [thin] [->] (5.25,0)--(0,2.3);
+			\draw [thin] [->] (5.25,0)--(0,-2.3);
+			\draw [thin] [|-|] (-0.38,0.03)--(-0.38,2.3);
+			\draw [very thick] [->] [red] (5.25,0)--(4.2,0.45);
+			\draw [very thick] [->] [red] (5.25,0)--(4.2,-0.45);
+			\draw [fill] (5.25,0) circle [radius=0.1];
+			\node [below left] at (0,0) {0};
+			\node [left] at (0, 2.8) {y};
+			\node [below] at (6.8,0) {x};
+			\node [left] at (-0.35,1.15) {a};
+			\node [above] at (4, 0) {$\theta$};
+			\node [above] at (2.55, 1.15) {$\vec{r}$};
+			\node [above] at (4.9, 0.18) {$\vec{g_1}$};
+			\node [below] at (4.9, -0.18) {$\vec{g_2}$};
+		\end{tikzpicture}
+	\end{center}
+	
+	Lo primero que notamos al analizar el sistema de particulas, es que debido a la simetría, la componente del campo en dirección $y$ será nula, or lo tanto:
+	\begin{equation*}
+	\vec{g}=|\vec{g_1}| \cos \theta + |\vec{g_2}| \cos \theta \vec{i} \left[\frac{N}{Kg} \right]\hspace{1.3cm} |\vec{g_1}|=|\vec{g_2}|=G\frac{m}{r^2} \left[\frac{N}{Kg} \right]
+	\end{equation*}
+	\begin{equation*}
+	\vec{g}=-2|\vec{g_1}| \cos \theta \vec{i}=-2G\frac{m}{r^2}\cos \theta \vec{i}=-2G\frac{m}{r^2}\cdot \frac{x}{r} \vec{i}=-2G\frac{m}{(x^2+a^2)^{3/2}} \vec{i}\left[\frac{N}{Kg} \right]
+	\end{equation*}
+	
+	Así, la solución al problema será $\vec{g}=-2G\frac{m}{(x^2+a^2)^{3/2}} \vec{i}\left[\frac{N}{Kg} \right]$.
+	
+	\subsection{Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (horizontal)}
+	\paragraph{Ejercicio:}
+	Sea una varilla uniforme de longitud $L$ cuyo centro está situado en el eje de coordenadas, calcular el valor del campo generado por la varilla en un punto cualquiera del eje x.
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [very thick] [->] (-4,0) -- (6,0);
+			\draw [very thick] [->] (0, -0.7)-- (0,2.5);
+			\draw [line width=5] [gray] (-3.5,0)--(3.5,0);
+			\draw [line width=5] [red] (2.4,0)--(2.8,0);
+			\draw [|-|] (2.4,-0.2)--(2.8,-0.2);
+			\draw [|-|] (-3.5,0.5)--(0,0.5);
+			\draw [fill] (5,0) circle [radius=0.1];
+			\node [below] at (2.6,-0.3) {dx};
+			\node [below left] at (0,2.5) {y};
+			\node [below left] at (6,0) {x};
+			\node [above] at (-1.75,0.5) {$\frac{L}{2}$};
+			\node [below left] at (0,0) {0};
+		\end{tikzpicture}
+	\end{center}
+	\paragraph{Realización:}
+	Al observar la posición de la varilla respecto al eje $x$ podemos ver que no existirá componente del campo en el eje $y$. Debemos comenzar tomanto un diferencial de longitud de la varilla en un punto cualquiera de esta y estudiar el campo que genera; siendo este el generado por una particula aislada (ecuación 1.5)
+	\begin{equation*}
+	d\vec{g}=-G\frac{dm}{r^2}\vec{i}=-G\frac{\lambda dx}{(x_0-x)^2)}\vec{i}\left [N \right ]
+	\end{equation*}
+	\begin{equation*}
+	\vec{g}=\int d \vec{g}=\int_{-\frac{L}{2}}^{\frac{L}{2}} \left( -G\frac{\lambda dx}{(x_0-x)^2)}\vec{i}\right)=-G\lambda \left( \int_{-\frac{L}{2}}^{\frac{L}{2}} \frac{1}{(x_0-x)^2)}dx\right)\vec{i}
+	\end{equation*}
+	\begin{equation*}
+	\vec{g}=G\lambda \left(\frac{1}{x_0-\frac{L}{2}}+\frac{1}{x_0+\frac{L}{2}}\right)\vec{i}=-G\frac{m}{x^2-\left ( \frac{L}{2} \right)^2}\vec{i} \left[\frac{N}{Kg} \right]
+	\end{equation*}
+	
+	Así, la solución al problema será $\vec{g}=-G\frac{m}{x^2-\left ( \frac{L}{2} \right)^2}\vec{i} \left[\frac{N}{Kg} \right]$.
+	
+	\subsection{Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (Vertical)}
+	\subsection{Campo Gravitatorio Generado por un Anillo Uniforme}
+	\paragraph{Ejercicio:}
+	Sea un anillo con masa $m$ y de radio $a$ situado en el plano $YZ$ y centrado en el origen de coordenadas, calcular el valor del campo generado por el mismo en un punto cualquiera del eje $X$.
+	\begin{center}
+		\begin{tikzpicture}
+		\draw [fill=gray](-0.1,0) circle [x radius=1.3cm, y radius=2cm];
+		\draw [fill=gray](0,0) circle [x radius=1.3cm, y radius=2cm];
+		\draw [fill=white](0,0) circle [x radius=1.1cm, y radius=1.8cm];
+		\draw [ultra thick] [->] (-1.1,0)--(4,0);
+		\draw [ultra thick] (-1.4,0)--(-2,0);
+		\draw [ultra thick] (0,-2.7)--(0,-2);
+		\draw [ultra thick] (0,-1.8)--(0,1.8);
+		\draw [ultra thick] [->] (0,2)--(0,2.7);
+		\draw [thick, red, dashed] (0,0)--(-0.8,1.2);
+		\draw [fill, color=black](3.2,0) circle (0.05);
+		\fill [color=red] (0.82,1.2)--(1,1.25)--(0.95,1.36)--(0.76,1.3)--(0.82,1.2);
+		\draw [->] (3.2,0)--(0.85,1.28);
+		\node [above left] at (2.12,0.64){r};
+		\node [above left] at (2.5,0) {$\theta$};
+		\node [below left] at (0,0) {0};
+		\node [below] at (-0.5,0.6){a};
+	\end{tikzpicture}
+	\end{center}
+	\paragraph{Realización:}
+	Conociendo el campo gravitatorio generado por una particula puntual  (ecuacion 1.5) podemos calcular el campo generado por un anillo como la suma de todos los campos generados por los distintos diferenciales de longitud del anillo:
+	\begin{equation*}
+		d\vec{g}=-G\frac{dm}{r^2}\cos\theta \hat{i}
+	\end{equation*}
+	Esto es debido a que gracias a la simetría del anillo, las componentes en el eje $Y$ se anulan.
+	\begin{equation*}
+		\vec{g}=\int\left(-G\frac{dm}{r^2}\cos\theta \hat{i}\right)=-G\frac{\cos\theta}{r^2}\left(\int dm\right)\hat{i}
+	\end{equation*}
+	\begin{equation*}
+		\vec{g}=-G\frac{m}{r^2}\cos\theta \hat{i}
+	\end{equation*}
+	Así, por la definición de coseno:
+	\begin{equation}
+		\vec{g}=-G\frac{m\cdot x}{\left(x^2+a^2\right)^{\frac{3}{2}}}\hat{i}
+	\end{equation}
+	\subsection{Campo Gravitatorio Generado por un Disco Uniforme}
+	\paragraph{Ejercicio:}
+	Sea un disco de densidad uniforme centrado en el origen de coordenadas, calcular el valor del campo gravitatorio generado por el mismo en un punto cualquiera del eje $X$.
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\draw [fill=gray](-0.1,0) circle [x radius=1.3cm, y radius=2cm];
+			\draw [fill=gray](0,0) circle [x radius=1.3cm, y radius=2cm];
+			\draw [fill=red](0,0) circle [x radius=1cm, y radius=1.7cm];
+			\draw [fill=gray](0,0) circle [x radius=0.8cm, y radius=1.5cm];
+			\draw [very thick] [->] (0,0)--(4,0);
+			\draw [very thick] (-2.3,0)--(-1.4,0);
+			\draw [thin] (0,-0.3)--(0,2);
+			\draw [very thick] [->] (-0.03,2)--(-0.04,2.5);
+			\draw [fill, color=black](3.2,0) circle (0.05);
+			\draw (0.45,1.4)--(3.2,0);
+			\draw [dashed, color=red] (0,0)--(0.5,1);
+			\node [below left] at (0,0) {0};
+			\node [above right] at (1.83,0.7) {r};
+			\node [below left] at (4,0) {x};
+			\node [below left] at (-0.04,2.5) {y};
+			\node [below right] at (0.25,0.5) {a};
+		\end{tikzpicture}
+	\end{center}
+	
+	\paragraph{Realización:}
+	Habiendo obtenido la expresión del valor del campo generado por un anillo en un punto cualquiera del eje $X$ (ecuación 1.9), podemos sumar el campo generado por varios anillos de distinto radio hasta alcanzar el disco, esto es:
+	\begin{equation*}
+		d\vec{g}=-G\frac{dm\cdot x}{\left(x^2+a^2\right)^{\frac{3}{2}}}\hat{i}
+	\end{equation*}
+	\begin{equation*}
+		\vec{g}=\int\left(-G\frac{dm\cdot x}{\left(x^2+a^2\right)^{\frac{3}{2}}}\hat{i}\right)=-G\left(\int\frac{x}{\left(x^2+a^2\right)^{\frac{3}{2}}}dm\right)\hat{i}
+	\end{equation*}
+	Podemos expresar el diferencial de masa como $dm=\sigma ds$ siendo $ds$ un diferencial de superficie. A su vez, la superficie de un anillo será igual a su longitud por un diferencial de espesor (en este caso, un diferencial de radio), es decir $ds=2\pi a da$; por lo tanto:
+	\begin{equation*}
+		\vec{g}=-G\left(\int\frac{\sigma (2\pi a da)x}{\left(x^2+a^2\right)^{\frac{3}{2}}}\right)\hat{i}=-G\pi\sigma x \left(\int\frac{ 2a }{\left(x^2+a^2\right)^{\frac{3}{2}}}da\right)\hat{i}
+	\end{equation*}
+	Los límites de integración corresponderán al radio mínimo (a=0) y al radio máximo (a=R).
+	\begin{equation*}
+	\vec{g}=-G\pi\sigma x \left(\int_0^R\frac{ 2a }{\left(x^2+a^2\right)^{\frac{3}{2}}}da\right)\hat{i}=-G\frac{\sigma 2\pi x}{\sqrt{x^2+a^2}}\Big|^R_0\hat{i}
+	\end{equation*}
+	Así, operando obtenemos el resultado:
+	\begin{equation}
+		\vec{g}=\pm G\sigma 2\pi \left(1-\frac{1}{\sqrt{1+\left(\frac{R}{x}\right)^2}}\right) \hat{i}
+	\end{equation}
+	
+	\paragraph{Corolario: Campo Electrico Generado por un Plano}
+	Podemos considerar un plano como un disco de radio infinito, por ello si nos encontramos en un punto donde la distancia al disco sea despreciable en relación al radio del disco ($R>>>x$) podemos aproximar el disco a un plano infinito, cuyo campo se verá definido por:
+	\begin{equation*}
+		\lim_{R\rightarrow\infty} \vec{E}=\lim_{R\rightarrow\infty} \pm K\sigma2\pi\left(1-\frac{1}{\sqrt{1+\left(\frac{R}{x}\right)^2}}\right)=\pm K\sigma2\pi=\pm \frac{1}{4\pi\epsilon}\sigma2\pi
+	\end{equation*}
+	Así, simplificando:
+	\begin{equation}
+		\vec{E}=\pm \frac{\sigma}{2\epsilon}\hat{i}
+	\end{equation}
+	\subsection{Campo Gravitatorio Generado por una Corteza Esférica Uniforme}
+	\paragraph{Ejercicio:}
+	Sea una corteza esferica de densidad uniforme centrada en el origen de coordenadas, calcular el valor del campo gravitatorio que genera en un punto cualquiera del eje $X$:
+	\begin{center}
+		\begin{tikzpicture}
+			\shade [ball color=white, opacity=0.9] (0,0) circle (1.8cm);
+			\shade [ball color=white, opacity=0.7] (0,0) circle (2cm);
+		\end{tikzpicture}
+	\end{center}
+	\paragraph{Realización:}
+	\paragraph{Corolario: Campo Gravitatorio en el interior de una Corteza Esférica}
+	\subsection{Campo Gravitatorio Generado por una Esfera Maciza Uniforme}
+	\paragraph{Ejercicio}
+	Sea una esfera maciza de densidad uniforme centrada en el origen de coordenadas, calcular el valor del campo gravitatorio en un punto cualquiera del eje $x$.
+	\begin{center}
+		\begin{tikzpicture}
+		
+		\shade [ball color=white, opacity=0.9] (0,0) circle (0.9cm);
+		\shade [ball color=red, opacity=0.8] (0,0) circle (1cm);
+		\shade [right color=white, opacity=0.1] (0,1)--(0,-1)--(4,0);
+		\draw [very thin] [<-] (0,0.95)--(4,0);
+		\draw [very thin] [<-] (0,-0.95)--(4,0);
+		\shade [ball color=white, opacity=0.5] (0,0) circle (2cm);
+		\draw  [->] (0,0)--(5,0);
+		\draw  [->] (0,0)--(0,3);
+		\draw  (0,0)--(-0.25,0);
+		\draw  (0,0)--(0,-0.25);
+		\draw  [fill, color=black](4,0) circle (0.05);
+		
+		\end{tikzpicture}
+	\end{center}
+	\paragraph{Realización}
+	Habiendo calculado el valor del campo generado por una corteza esférica en un punto radial cualquiera exterior a la corteza, podemos emplear este dato para calcular el campo generado por una esfera maciza unicamente sumando los campos generados por las cortezas de radio creciente, es decir:
+	\begin{equation*}
+		d\vec{g}=-G\frac{dm}{r^2} \hat{i}
+	\end{equation*}
+	\begin{equation*}
+		\vec{g}=\int_{0}^{M}\left(-G\frac{dm}{r^2} \hat{i}\right)=-G\frac{1}{r^2}\left(\int_{0}^{M}dm\right)\hat{i}
+	\end{equation*}
+	Así, obtenemos el resultado:
+	\begin{equation}
+		\vec{g}=-G\frac{M}{r^2}\hat{i}
+	\end{equation}
+	
+	\paragraph{Campo Gravitatorio en el Interior de una Esfera Maciza}
+	Hemos visto anteriormente que el valor del campo generado por una corteza esférica es nulo en todos los puntos interiores a la misma, por ello, en el inteior de una esfera maciza, el valor del campo es igual al valor del campo generado por la esfera maciza inferior a la capa donde se encuentra el punto de calculo; podemos observar el cambio del valor del campo en relación a la distancia del centro de la esfera en la siguiente representación grafica:
+	
+\end{document}
