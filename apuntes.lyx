@@ -1,0 +1,325 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula $\cos\theta=\dfrac{x}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{g}=-G\frac{m}{r^{2}}\cdot\frac{a}{r}\hat{i}=-G\frac{ma}{r^{3}}\hat{i}\overset{r^{2}=a^{2}+x^{2}}{=}-G\frac{ma}{\left(a^{2}+x^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{g}=-G\dfrac{m}{r^{2}}\cdot\dfrac{x}{r}\hat{i}=-G\dfrac{mx}{r^{3}}\hat{i}\overset{r^{2}=a^{2}+x^{2}}{=}-G\dfrac{mx}{\left(a^{2}+x^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{g}=-\dfrac{Gmx}{\left(a^{2}+x^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{g}=-\dfrac{Gmx}{\left(a^{2}+x^{2}\right)^{\frac{3}{2}}}\hat{i}\overset{a^{2}+x^{2}\simeq x^{2}}{\simeq}-\dfrac{Gmx}{x^{3}}\hat{i}=-\dfrac{Gm}{x^{2}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{g}=-\dfrac{Gmx}{\left(a^{2}+x^{2}\right)^{\frac{3}{2}}}\hat{i}\overset{a^{2}+x^{2}\simeq a^{2}}{\simeq}-\dfrac{Gmx}{a^{3}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+\left(\frac{L}{2}\right)^{2}\simeq x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+\left(\frac{L}{2}\right)^{2}\simeq\left(\frac{L}{2}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{0}^{2}-\left(\frac{L}{2}\right)^{2}\simeq x_{0}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[\dfrac{N}{Kg}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{A}\int_{0}^{B}dadb=\int_{0}^{A}da\int_{0}^{B}db=\int_{0}^{A}da\left[b\right]_{0}^{B}=\int_{0}^{A}da\left(B-0\right)=B\int_{0}^{A}da=B\left[a\right]_{0}^{A}=AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\pi\left(r_{grande}^{2}-r_{pequeño}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dfrac{A}{2\pi}=\dfrac{A_{trapecio}}{\alpha}\Leftrightarrow A=\dfrac{A\cdot\alpha}{2\pi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dS=\dfrac{\pi\left[\left(a+da\right)^{2}-a^{2}\right]\cdot d\theta}{2\pi}=\dfrac{\left(a^{2}+2a\cdot da+\left(da\right)^{2}-a^{2}\right)d\theta}{2}=\dfrac{\left(2a\cdot da+\left(da\right)^{2}\right)d\theta}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(da\right)^{2}\simeq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(da\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dS=$
+\end_inset
+
+
+\begin_inset Formula $\dfrac{2a\cdot da\cdot d\theta}{2}=a\cdot da\cdot d\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\vec{E}=\int d\vec{E}=\int\dfrac{Kdq}{r^{2}}\hat{i}\overset{dq=\sigma dS}{=}\int_{0}^{R}\int_{0}^{2\pi}\frac{K\sigma adad\theta}{r^{2}}\cos\alpha\hat{i}\overset{\cos\alpha=\frac{x}{r}}{=}\\
+=\int_{0}^{R}\int_{0}^{2\pi}\frac{K\sigma adad\theta}{r^{2}}\cdot\dfrac{x}{r}\hat{i}\overset{r^{2}=x^{2}+a^{2}}{=}\int_{0}^{R}\int_{0}^{2\pi}\frac{K\sigma adad\theta}{a^{2}+x^{2}}\frac{x}{\sqrt{x^{2}+a^{2}}}\hat{i}=\\
+=\int_{0}^{R}\frac{K\sigma adax}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\int_{0}^{2\pi}d\theta\hat{i}=\int_{0}^{R}\frac{K\sigma adax2\pi}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}=\\
+=\ensuremath{K{\displaystyle \sigma2\pi x\int_{0}^{R}\frac{ada}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}=-K\sigma2\pi x\left[\frac{1}{\sqrt{x^{2}+a^{2}}}\right]_{0}^{R}\hat{i}}}=\\
+=-K\sigma2\pi x\left(\frac{1}{\sqrt{x^{2}+R^{2}}}-\frac{1}{\left|x\right|}\right)\hat{i}=K\sigma2\pi x\left(\frac{1}{\left|x\right|}-\frac{1}{\sqrt{x^{2}+R^{2}}}\right)\hat{i}=\\
+\ensuremath{{\displaystyle =\pm K\sigma2\pi\hat{i}-\frac{K\sigma2\pi x}{x\sqrt{1+\frac{R^{2}}{x^{2}}}}\hat{i}}}\ensuremath{=\pm K\sigma2\pi\left(1-\frac{1}{\sqrt{1+\frac{R^{2}}{x^{2}}}}\right)}\hat{i}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{E}=\int d\vec{E}=\int\dfrac{Kdq}{r^{2}}\hat{i}\overset{dq=\sigma dS}{=}\int_{0}^{R}\int_{0}^{2\pi}\dfrac{K\sigma adad\theta}{r^{2}}\cos\alpha\hat{i}\overset{\cos\alpha=\frac{x}{r}}{=}\int_{0}^{R}\int_{0}^{2\pi}\dfrac{K\sigma adad\theta}{r^{2}}\cdot\dfrac{x}{r}\hat{i}\overset{r^{2}=x^{2}+a^{2}}{=}\int_{0}^{R}\int_{0}^{2\pi}\dfrac{K\sigma adad\theta}{a^{2}+x^{2}}\dfrac{x}{\sqrt[]{x^{2}+a^{2}}}\hat{i}=\int_{0}^{R}\dfrac{K\sigma adax}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\int_{0}^{2\pi}d\theta\hat{i}=\int_{0}^{R}\dfrac{K\sigma adax2\pi}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}=K\sigma2\pi x\int_{0}^{R}\dfrac{ada}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}=-K\sigma2\pi x\left[\dfrac{1}{\sqrt[]{x^{2}+a^{2}}}\right]_{0}^{R}\hat{i}=-K\sigma2\pi x\left(\dfrac{1}{\sqrt[]{x^{2}+R^{2}}}-\dfrac{1}{\left|x\right|}\right)\hat{i}=K\sigma2\pi x\left(\dfrac{1}{\left|x\right|}-\dfrac{1}{\sqrt[]{x^{2}+R^{2}}}\right)\hat{i}=\pm K\sigma2\pi\hat{i}-\dfrac{K\sigma2\pi x}{x\sqrt[]{1+\dfrac{R^{2}}{x^{2}}}}\hat{i}=\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt[]{1+\dfrac{R^{2}}{x^{2}}}}\right)\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dA=\pi\left[\left(r+dr\right)^{2}-r^{2}\right]=\pi\left(r^{2}+2rdr+\left(dr\right)^{2}-r^{2}\right)=\pi\left(2rdr+\left(dr\right)^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dA=2\pi rdr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dfrac{dA_{corona}}{2\pi}=\dfrac{dA_{trapecio}}{\alpha}\Leftrightarrow dA_{trapecio}=\dfrac{dA_{corona}\cdot d\alpha}{2\pi}=\dfrac{2\pi rdrd\alpha}{2\pi}=rdrd\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\vec{E}=K\frac{dq\cdot x}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{E}=\int\left(K\frac{dq\cdot x}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}\right)=K\left(\int\frac{x}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}dq\right)\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{E}=K\int_{0}^{R}\dfrac{xdq}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}\overset{dq=\sigma dS}{=}Kx\int_{0}^{R}\sigma2\pi ada\hat{i}=K\sigma2\pi x\int_{0}^{R}\dfrac{ada}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{E}=\int_{0}^{R}K\dfrac{dq\cdot x}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}=K\int_{0}^{R}\dfrac{xdq}{\left(x^{2}+a^{2}\right)^{\frac{3}{2}}}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{R\rightarrow\infty}\vec{E}=\lim_{R\rightarrow\infty}\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt{1+\left(\dfrac{R}{x}\right)^{2}}}\right)\hat{i}=\pm K\sigma2\pi\hat{i}\overset{K=\frac{1}{4\pi\varepsilon}}{=}\pm\dfrac{1}{4\pi\varepsilon}\sigma2\pi\hat{i}==\pm\dfrac{\sigma}{2\varepsilon}\hat{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{x\rightarrow\infty}\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt{1+\left(\dfrac{R}{x}\right)^{2}}}\right)\hat{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)\equiv K\sigma2\pi\left(1-\dfrac{1}{\sqrt{1+\left(\dfrac{R}{x}\right)^{2}}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(a)\equiv K\sigma2\pi\left(1-\dfrac{1}{\sqrt[]{1+a}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\equiv\dfrac{R^{2}}{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(0)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g'(a)=-K\sigma2\pi\left(-\dfrac{1}{2}\right)\dfrac{1}{\left(1+a\right)^{\frac{3}{2}}}=\dfrac{K\sigma\pi}{\left(1+a\right)^{\frac{3}{2}}}\Rightarrow g'(0)=K\sigma\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{1,0}(g)(a)=K\sigma\pi a\overset{a=\frac{R^{2}}{x^{2}}}{=}\dfrac{K\sigma\pi R^{2}}{x^{2}}\overset{\sigma=\frac{q}{\pi R^{2}}}{=}\dfrac{K\pi R^{2}}{x^{2}}\cdot\dfrac{q}{\pi R^{2}}=\dfrac{Kq}{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
