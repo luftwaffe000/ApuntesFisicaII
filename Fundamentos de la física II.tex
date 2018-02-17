@@ -370,7 +370,7 @@
 	\begin{equation}\label{VarillaVertical}
 	\vec{g}=-\dfrac{Gm}{x\sqrt{x^{2}+\left(\dfrac{L}{2}\right)^{2}}}\hat{i}\left[\dfrac{N}{Kg} \right]
 	\end{equation}
-	\paragraph{Nota:} Ofrecemos una explicación de ese paso en el apéndice A.
+	\paragraph{Nota:} Ofrecemos una explicación de ese paso en el apéndice \ref{ArctgArcsen}.
 	\paragraph{Límite $x\gg L$:} $\vec{g}=-\dfrac{Km}{x\sqrt{x^{2}+\left(\frac{L}{2}\right)^{2}}}\hat{i}\overset{x^{2}+\left(\frac{L}{2}\right)^{2}\simeq x^{2}}{\simeq}-\dfrac{Km}{x\sqrt{x^{2}}}\hat{i}=-\dfrac{Km}{x^{2}}\hat{i}\left[\dfrac{N}{Kg} \right]$
 	\paragraph{Límite $x\ll L$:}
 	$\vec{g}=-\dfrac{Km}{x\sqrt{x^{2}+\left(\frac{L}{2}\right)^{2}}}\hat{i}\overset{x^{2}+\left(\frac{L}{2}\right)^{2}\simeq\left(\frac{L}{2}\right)^{2}}{\simeq}-\dfrac{Km}{x\sqrt{\left(\dfrac{L}{2}\right)^{2}}}\hat{i}=-\dfrac{Km}{x\frac{L}{2}}\hat{i}=-\dfrac{2Km}{Lx}\hat{i}\overset{m=\lambda L}{=}-\dfrac{2K\lambda L}{Lx}\hat{i}=-\dfrac{2K\lambda}{x}\hat{i}\left[\dfrac{N}{Kg} \right]$
@@ -520,14 +520,14 @@
 	
 	\paragraph{Solución:}
 	\begin{equation}\label{Disco}
-	\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt[]{1+\dfrac{R^{2}}{x^{2}}}}\right)\hat{i}
+	\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt[]{1+\dfrac{R^{2}}{x^{2}}}}\right)\hat{i}\left[\dfrac{N}{Kg}\right]
 	\end{equation}
 	
 	\paragraph{Corolario: Campo Eléctrico Generado por un Plano (Límite $x\ll R$):}
 	Podemos considerar un plano como un disco de radio infinito; por ello, si nos encontramos en un punto donde la distancia al disco es despreciable en relación al radio del disco ($R\ggg x$) podemos aproximar el disco a un plano infinito, cuyo campo se verá definido por:
 	\begin{align*}
 		\lim_{R\rightarrow\infty}\vec{E}&=\lim_{R\rightarrow\infty}\pm K\sigma2\pi\left(1-\dfrac{1}{\sqrt{1+\left(\dfrac{R}{x}\right)^{2}}}\right)\hat{i}=\pm K\sigma2\pi\hat{i}\overset{K=\frac{1}{4\pi\varepsilon}}{=}\pm\dfrac{1}{4\pi\varepsilon}\sigma2\pi\hat{i}=\\
-		&=\pm\dfrac{\sigma}{2\varepsilon}\hat{i}
+		&=\pm\dfrac{\sigma}{2\varepsilon}\hat{i}\left[\dfrac{N}{Kg}\right]
 	\end{align*}
 	
 	\paragraph{Límite $x\gg R$:}
@@ -550,7 +550,7 @@
 	\end{itemize}
 	De esta forma:
 	\begin{equation*}
-	T_{1,0}(g)(a)=K\sigma\pi a\overset{a=\frac{R^{2}}{x^{2}}}{=}\dfrac{K\sigma\pi R^{2}}{x^{2}}\overset{\sigma=\frac{q}{\pi R^{2}}}{=}\dfrac{K\pi R^{2}}{x^{2}}\cdot\dfrac{q}{\pi R^{2}}=\dfrac{Kq}{x^{2}}
+	T_{1,0}(g)(a)=K\sigma\pi a\overset{a=\frac{R^{2}}{x^{2}}}{=}\dfrac{K\sigma\pi R^{2}}{x^{2}}\overset{\sigma=\frac{q}{\pi R^{2}}}{=}\dfrac{K\pi R^{2}}{x^{2}}\cdot\dfrac{q}{\pi R^{2}}=\dfrac{Kq}{x^{2}}\left[\dfrac{N}{Kg}\right]
 	\end{equation*}
 	\subsection{Campo Gravitatorio Generado por una Corteza Esférica Uniforme}
 	\paragraph{Ejercicio:}
@@ -602,7 +602,16 @@
 			
 \appendix
 
-	\chapter{Problemas Matemáticos}
+	\chapter{Apéndice Matemático}
+	\section{Arcotagente del arcoseno}\label{ArctgArcsen}
+	\begin{align*}
+		&\displaystyle \dfrac{1}{\cos^{2}\alpha}=1+\tan^{2}\alpha\Leftrightarrow\dfrac{1}{1-\sin^{2}\alpha}=1+\tan^{2}\alpha\Leftrightarrow\dfrac{1}{1+\tan^{2}\alpha}=1-\sin^{2}\alpha\Leftrightarrow\\
+		\displaystyle \Leftrightarrow&\sin^{2}\alpha=1-\dfrac{1}{1+\tan^{2}\alpha}\Leftrightarrow\sin\alpha=\sqrt{1-\dfrac{1}{1+\tan^{2}\alpha}}
+	\end{align*}
+	Ahora, tomemos $\alpha=\arctan x$:
+	\begin{equation*}
+	\sin\left(\arctan x\right)=\sqrt{1-\frac{1}{1+\tan\left(\arctan x\right)\cdot\tan\left(\arctan x\right)}}=\sqrt{1-\frac{1}{1+x^{2}}}
+	\end{equation*}
 	\section{Pequeña introducción al concepto de doble integral:}\label{DobleIntegral} Del mismo modo que cuando se realiza una integral "normal" se recorre una línea (una dimensión), al hacer una doble integral se recorre una superficie (dos dimensiones). Vayamos con un ejemplo sencillo. Imaginemos que queremos hallar el área de un rectángulo, de lados A y B como se muestra en el dibujo.
 	
 	\begin{center}

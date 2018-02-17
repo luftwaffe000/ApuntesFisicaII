@@ -60,6 +60,7 @@
 \contentsline {paragraph}{Ejercicio}{15}
 \contentsline {paragraph}{Realizaci\'on}{16}
 \contentsline {paragraph}{Campo Gravitatorio en el Interior de una Esfera Maciza}{16}
-\contentsline {chapter}{\numberline {A}Problemas Matem\'aticos}{17}
-\contentsline {section}{\numberline {A.1}Peque\~na introducci\'on al concepto de doble integral:}{17}
-\contentsline {section}{\numberline {A.2}\'Area de un diferencial de corona circular y de un diferencial de trapecio circular}{17}
+\contentsline {chapter}{\numberline {A}Ap\'endice Matem\'atico}{17}
+\contentsline {section}{\numberline {A.1}Arcotagente del arcoseno}{17}
+\contentsline {section}{\numberline {A.2}Peque\~na introducci\'on al concepto de doble integral:}{17}
+\contentsline {section}{\numberline {A.3}\'Area de un diferencial de corona circular y de un diferencial de trapecio circular}{18}
