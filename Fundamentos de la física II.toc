@@ -1,66 +1,88 @@
-\contentsline {chapter}{\numberline {1}Campos Conservativos}{2}
-\contentsline {section}{\numberline {1.1}Interacci\'on Gravitatoria y El\'ectrica}{2}
-\contentsline {subsection}{\numberline {1.1.1}Ley de la gravitaci\'on universal}{2}
-\contentsline {subsection}{\numberline {1.1.2}Ley de Coulomb}{3}
-\contentsline {subsection}{\numberline {1.1.3}Comparaci\'on entre fuerza gravitatoria y el\'ectrica}{3}
-\contentsline {section}{\numberline {1.2}Campo Gravitatorio y El\'ectrico}{3}
-\contentsline {subsection}{\numberline {1.2.1}Concepto de campo}{3}
-\contentsline {subsection}{\numberline {1.2.2}Campo gravitatorio}{4}
-\contentsline {paragraph}{Campo generado por una \'unica masa:}{4}
-\contentsline {paragraph}{Campo generado por una \'unica part\IeC {\'\i }cula puntual:}{4}
-\contentsline {paragraph}{En general:}{4}
-\contentsline {paragraph}{Nota:}{4}
-\contentsline {subsection}{\numberline {1.2.3}Campo el\'ectrico}{4}
-\contentsline {paragraph}{Campo generado por una \'unica carga:}{4}
+\contentsline {chapter}{\numberline {1}Campos Conservativos}{3}
+\contentsline {section}{\numberline {1.1}Interacci\'on Gravitatoria y El\'ectrica}{3}
+\contentsline {subsection}{\numberline {1.1.1}Ley de la gravitaci\'on universal}{3}
+\contentsline {subsection}{\numberline {1.1.2}Ley de Coulomb}{4}
+\contentsline {subsection}{\numberline {1.1.3}Comparaci\'on entre fuerza gravitatoria y el\'ectrica}{4}
+\contentsline {section}{\numberline {1.2}Campo Gravitatorio y El\'ectrico}{4}
+\contentsline {subsection}{\numberline {1.2.1}Concepto de campo}{4}
+\contentsline {subsection}{\numberline {1.2.2}Campo gravitatorio}{5}
+\contentsline {paragraph}{Campo generado por una \'unica masa:}{5}
 \contentsline {paragraph}{Campo generado por una \'unica part\IeC {\'\i }cula puntual:}{5}
 \contentsline {paragraph}{En general:}{5}
 \contentsline {paragraph}{Nota:}{5}
-\contentsline {section}{\numberline {1.3}L\IeC {\'\i }neas de Campo}{5}
-\contentsline {section}{\numberline {1.4}C\'alculo del Campo Generado por Distribuciones de Carga/Masa}{6}
-\contentsline {subsection}{\numberline {1.4.1}Campo Gravitatorio de dos Part\IeC {\'\i }culas Puntuales}{6}
-\contentsline {paragraph}{Ejercicio:}{6}
-\contentsline {paragraph}{Realizaci\'on:}{7}
-\contentsline {paragraph}{Soluci\'on:}{7}
-\contentsline {subsection}{\numberline {1.4.2}Peque\~na introducci\'on a las densidades de masa y de carga}{7}
-\contentsline {paragraph}{Nota:}{7}
-\contentsline {subsection}{\numberline {1.4.3}Campo Gravitatorio generado por una Varilla de Densidad Lineal Uniforme (horizontal)}{7}
+\contentsline {subsection}{\numberline {1.2.3}Campo el\'ectrico}{5}
+\contentsline {paragraph}{Campo generado por una \'unica carga:}{5}
+\contentsline {paragraph}{Campo generado por una \'unica part\IeC {\'\i }cula puntual:}{6}
+\contentsline {paragraph}{En general:}{6}
+\contentsline {paragraph}{Nota:}{6}
+\contentsline {section}{\numberline {1.3}L\IeC {\'\i }neas de Campo}{6}
+\contentsline {section}{\numberline {1.4}C\'alculo del Campo Generado por Distribuciones de Carga/Masa}{7}
+\contentsline {subsection}{\numberline {1.4.1}Campo Gravitatorio de dos Part\IeC {\'\i }culas Puntuales}{7}
 \contentsline {paragraph}{Ejercicio:}{7}
 \contentsline {paragraph}{Realizaci\'on:}{8}
 \contentsline {paragraph}{Soluci\'on:}{8}
+\contentsline {subsection}{\numberline {1.4.2}Peque\~na introducci\'on a las densidades de masa y de carga}{8}
 \contentsline {paragraph}{Nota:}{8}
-\contentsline {paragraph}{Nota:}{8}
-\contentsline {paragraph}{Nota:}{8}
-\contentsline {paragraph}{L\IeC {\'\i }mite: $x\gg L$:}{9}
-\contentsline {subsection}{\numberline {1.4.4}Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (Vertical)}{9}
-\contentsline {paragraph}{Ejercicio:}{9}
+\contentsline {subsection}{\numberline {1.4.3}Campo Gravitatorio generado por una Varilla de Densidad Lineal Uniforme (horizontal)}{8}
+\contentsline {paragraph}{Ejercicio:}{8}
 \contentsline {paragraph}{Realizaci\'on:}{9}
-\contentsline {paragraph}{Soluci\'on:}{10}
-\contentsline {paragraph}{Nota:}{10}
-\contentsline {paragraph}{L\IeC {\'\i }mite $x\gg L$:}{10}
-\contentsline {paragraph}{L\IeC {\'\i }mite $x\ll L$:}{10}
-\contentsline {paragraph}{Nota:}{11}
-\contentsline {subsection}{\numberline {1.4.5}Campo Gravitatorio generado por un Anillo Uniforme}{11}
-\contentsline {paragraph}{Ejercicio:}{11}
-\contentsline {paragraph}{Realizaci\'on:}{11}
+\contentsline {paragraph}{Soluci\'on:}{9}
+\contentsline {paragraph}{Nota:}{9}
+\contentsline {paragraph}{Nota:}{9}
+\contentsline {paragraph}{Nota:}{9}
+\contentsline {paragraph}{L\IeC {\'\i }mite: $x\gg L$:}{10}
+\contentsline {subsection}{\numberline {1.4.4}Campo Gravitatorio Generado por una Varilla de Densidad Lineal Uniforme (Vertical)}{10}
+\contentsline {paragraph}{Ejercicio:}{10}
+\contentsline {paragraph}{Realizaci\'on:}{10}
 \contentsline {paragraph}{Soluci\'on:}{11}
-\contentsline {paragraph}{L\IeC {\'\i }mite: $x\gg a$:}{11}
-\contentsline {paragraph}{L\IeC {\'\i }mite $x\ll a$:}{11}
-\contentsline {subsection}{\numberline {1.4.6}Campo El\'ectrico Generado por un Disco Uniforme}{12}
+\contentsline {paragraph}{Nota:}{11}
+\contentsline {paragraph}{L\IeC {\'\i }mite $x\gg L$:}{11}
+\contentsline {paragraph}{L\IeC {\'\i }mite $x\ll L$:}{11}
+\contentsline {paragraph}{Nota:}{12}
+\contentsline {subsection}{\numberline {1.4.5}Campo Gravitatorio generado por un Anillo Uniforme}{12}
 \contentsline {paragraph}{Ejercicio:}{12}
-\contentsline {paragraph}{Realizaci\'on (integral doble):}{12}
-\contentsline {paragraph}{Realizaci\'on (anillo):}{13}
-\contentsline {paragraph}{Soluci\'on:}{14}
-\contentsline {paragraph}{Corolario: Campo El\'ectrico Generado por un Plano (L\IeC {\'\i }mite $x\ll R$):}{14}
-\contentsline {paragraph}{L\IeC {\'\i }mite $x\gg R$:}{14}
-\contentsline {subsection}{\numberline {1.4.7}Campo Gravitatorio Generado por una Corteza Esf\'erica Uniforme}{15}
-\contentsline {paragraph}{Ejercicio:}{15}
-\contentsline {paragraph}{Realizaci\'on:}{15}
-\contentsline {paragraph}{Corolario: Campo Gravitatorio en el interior de una Corteza Esf\'erica}{15}
-\contentsline {subsection}{\numberline {1.4.8}Campo Gravitatorio Generado por una Esfera Maciza Uniforme}{15}
-\contentsline {paragraph}{Ejercicio}{15}
-\contentsline {paragraph}{Realizaci\'on}{16}
-\contentsline {paragraph}{Campo Gravitatorio en el Interior de una Esfera Maciza}{16}
-\contentsline {chapter}{\numberline {A}Ap\'endice Matem\'atico}{17}
-\contentsline {section}{\numberline {A.1}Arcotagente del arcoseno}{17}
-\contentsline {section}{\numberline {A.2}Peque\~na introducci\'on al concepto de doble integral:}{17}
-\contentsline {section}{\numberline {A.3}\'Area de un diferencial de corona circular y de un diferencial de trapecio circular}{18}
+\contentsline {paragraph}{Realizaci\'on:}{12}
+\contentsline {paragraph}{Soluci\'on:}{12}
+\contentsline {paragraph}{L\IeC {\'\i }mite: $x\gg a$:}{12}
+\contentsline {paragraph}{L\IeC {\'\i }mite $x\ll a$:}{12}
+\contentsline {subsection}{\numberline {1.4.6}Campo El\'ectrico Generado por un Disco Uniforme}{13}
+\contentsline {paragraph}{Ejercicio:}{13}
+\contentsline {paragraph}{Realizaci\'on (integral doble):}{13}
+\contentsline {paragraph}{Realizaci\'on (anillo):}{14}
+\contentsline {paragraph}{Soluci\'on:}{15}
+\contentsline {paragraph}{Corolario: Campo El\'ectrico Generado por un Plano (L\IeC {\'\i }mite $x\ll R$):}{15}
+\contentsline {paragraph}{L\IeC {\'\i }mite $x\gg R$:}{15}
+\contentsline {subsection}{\numberline {1.4.7}Campo Gravitatorio Generado por una Corteza Esf\'erica Uniforme}{16}
+\contentsline {paragraph}{Ejercicio:}{16}
+\contentsline {paragraph}{Realizaci\'on (campo fuera del casquete esf\'erico):}{16}
+\contentsline {paragraph}{Soluci\'on:}{18}
+\contentsline {paragraph}{Campo dentro de la corteza}{18}
+\contentsline {paragraph}{Soluci\'on:}{18}
+\contentsline {subsection}{\numberline {1.4.8}Campo Gravitatorio Generado por una Esfera Maciza Uniforme}{19}
+\contentsline {paragraph}{Ejercicio}{19}
+\contentsline {paragraph}{Realizaci\'on}{19}
+\contentsline {paragraph}{Campo Gravitatorio en el Interior de una Esfera Maciza}{19}
+\contentsline {subsection}{\numberline {1.4.9}Campo generado por esferas de densidad variable}{19}
+\contentsline {paragraph}{Si $r>R$:}{19}
+\contentsline {paragraph}{Si $r<R$:}{20}
+\contentsline {section}{\numberline {1.5}Energ\IeC {\'\i }a potencial de campos conservativos}{20}
+\contentsline {subsection}{\numberline {1.5.1}Campo gravitatorio}{20}
+\contentsline {subsection}{\numberline {1.5.2}Campo el\'ectrico}{20}
+\contentsline {section}{\numberline {1.6}Potencial}{20}
+\contentsline {paragraph}{Definici\'on:}{20}
+\contentsline {subsection}{\numberline {1.6.1}Potencial entre dos cargas puntuales}{21}
+\contentsline {subsection}{\numberline {1.6.2}Potencial generado por una varilla}{21}
+\contentsline {subsection}{\numberline {1.6.3}Potencial generado por un anillo}{22}
+\contentsline {subsection}{\numberline {1.6.4}Potencial generado por un disco}{22}
+\contentsline {paragraph}{Caso l\IeC {\'\i }mite $R\gg x$:}{22}
+\contentsline {section}{\numberline {1.7}Relaci\'on entre campo y potencial}{22}
+\contentsline {section}{\numberline {1.8}Ley de Gauss}{23}
+\contentsline {subsection}{\numberline {1.8.1}Campo generado por una varilla}{23}
+\contentsline {subsection}{\numberline {1.8.2}Campo generado por una varilla finita}{23}
+\contentsline {subsection}{\numberline {1.8.3}Campo generado por un plano infinito}{24}
+\contentsline {subsection}{\numberline {1.8.4}Campo generado por una esfera}{25}
+\contentsline {subsection}{\numberline {1.8.5}Campo generado por una corteza esf\'erica}{26}
+\contentsline {chapter}{\numberline {A}Ap\'endice Matem\'atico}{27}
+\contentsline {section}{\numberline {A.1}Arcotagente del arcoseno}{27}
+\contentsline {section}{\numberline {A.2}Peque\~na introducci\'on al concepto de doble integral:}{27}
+\contentsline {section}{\numberline {A.3}\'Area de un diferencial de corona circular y de un diferencial de trapecio circular}{28}
